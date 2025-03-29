@@ -19,6 +19,7 @@
     stages {
         stage(&apos;Checkout&apos;) {
             steps {
+                cleanWs()
                 checkout scmGit(branches: [[name: &apos;branch-002&apos;]], 
                                 userRemoteConfigs: [[url: &apos;https://github.com/jenkinsci/xshell-plugin.git&apos;]])
                 sh &apos;git branch &amp;&amp; git log -n 1&apos;

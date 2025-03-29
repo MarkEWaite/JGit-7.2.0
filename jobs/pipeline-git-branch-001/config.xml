@@ -19,6 +19,7 @@
     stages {
         stage(&apos;Checkout&apos;) {
             steps {
+                cleanWs()
                 git branch: &apos;branch-001&apos;, url: &apos;https://github.com/jenkinsci/xshell-plugin.git&apos;
                 sh &apos;git branch &amp;&amp; git log -n 1&apos;
             }

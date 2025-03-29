@@ -19,6 +19,7 @@
     stages {
         stage(&apos;Checkout&apos;) {
             steps {
+                cleanWs()
                 checkout scmGit(branches: [[name: &apos;*/master&apos;]],
                                 extensions: [cloneOption(reference: &apos;/home/mwaite/git/bare/jenkins/xshell-plugin.git&apos;)],
                                 userRemoteConfigs: [[url: &apos;https://github.com/jenkinsci/xshell-plugin.git&apos;]])
