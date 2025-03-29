@@ -34,4 +34,4 @@ if [ ! -f ../$JENKINS_WAR ]; then
   mv jenkins*.war ../$JENKINS_WAR
 fi
 
-JENKINS_HOME=. java -jar ../$JENKINS_WAR
+JENKINS_HOME=. java -XX:+EnableDynamicAgentLoading -jar ../$JENKINS_WAR
