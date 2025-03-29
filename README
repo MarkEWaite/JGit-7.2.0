@@ -6,6 +6,12 @@
 #
 # JGit 7.2.0 seems to have a repeatable leak in file.Pack.doOpen() when called through
 # RevWalk.parseCommit() and RevWalk.parseAny()
+#
+# See the issue by running this README.  Complete the setup wizard
+# by creating a new user and installing no additional plugins.  Run the
+# jobs each once, then enable file leak detector from "Manage Jenkins" ->
+# "Open File Handles".  Run the jobs again and check the open file handles
+# page at /manage/file-handles/
 
 JENKINS_WAR_VERSION=2.492.2
 JENKINS_WAR=jenkins-${JENKINS_WAR_VERSION}.war
