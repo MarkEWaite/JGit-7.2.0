@@ -12,6 +12,9 @@
 # jobs each once, then enable file leak detector from "Manage Jenkins" ->
 # "Open File Handles".  Run the jobs again and check the open file handles
 # page at /manage/file-handles/
+#
+# File handle leaks are not reported by JGit 7.0.0 as included in git client 6.1.x.
+# File handles are reported for JGit 7.2.0 as included in git client 6.2.0 incremental.
 
 JENKINS_WAR_VERSION=2.492.2
 JENKINS_WAR=jenkins-${JENKINS_WAR_VERSION}.war
