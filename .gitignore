@@ -13,7 +13,7 @@
 /nodeMonitors.xml
 /org.jenkinsci.plugins.workflow.flow.FlowExecutionList.xml
 /plugins/
-/queue.xml
+/queue.xml*
 /secret.key
 /secret.key.not-so-secret
 /secrets/
