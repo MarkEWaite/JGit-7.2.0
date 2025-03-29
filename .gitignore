@@ -7,7 +7,7 @@
 /jenkins.mvn.GlobalMavenConfig.xml
 /jenkins.telemetry.Correlator.xml
 /jobs/**/builds/
-/jobs/**/workspace/
+/jobs/**/workspace*/
 /jobs/**/nextBuildNumber
 !/jobs/**/config.xml
 /nodeMonitors.xml
