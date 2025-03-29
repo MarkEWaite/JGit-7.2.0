@@ -1,14 +1,20 @@
 apache-httpcomponents-client-4-api:4.5.14-269.vfa_2321039a_83
 asm-api:9.7.1-129.vf5618e98eed1
+bootstrap5-api:5.3.3-2
 bouncycastle-api:2.30.1.80-256.vf98926042a_9b_
 branch-api:2.1214.v3f652804588d
 caffeine-api:3.2.0-166.v72a_6d74b_870f
+checks-api:367.v18b_7f530e54a_
 cloudbees-folder:6.999.v42253c105443
+commons-lang3-api:3.17.0-87.v5cf526e63b_8b_
+commons-text-api:1.13.0-153.v91dcd89e2a_22
 credentials:1413.va_51c53703df1
 credentials-binding:687.v619cb_15e923f
 display-url-api:2.209.v582ed814ff2f
 durable-task:587.v84b_877235b_45
+echarts-api:5.6.0-2
 file-leak-detector:1.14
+font-awesome-api:6.7.2-1
 git:5.7.0
 git-client:6.1.2
 gson-api:2.12.1-113.v347686d6729f
@@ -20,8 +26,11 @@ jakarta-mail-api:2.1.3-2
 javax-activation-api:1.2.0-8
 jaxb:2.3.9-133.vb_ec76a_73f706
 joda-time-api:2.14.0-127.v7d9da_295a_d51
+jquery3-api:3.7.1-3
 json-api:20250107-125.v28b_a_ffa_eb_f01
+junit:1319.v000471ca_e5e2
 mailer:489.vd4b_25144138f
+matrix-project:847.v88a_f90ff9f20
 mina-sshd-api-common:2.14.0-143.v2b_362fc39576
 mina-sshd-api-core:2.14.0-143.v2b_362fc39576
 pipeline-build-step:557.v95d96f77b_2b_8
@@ -34,6 +43,8 @@ pipeline-model-extensions:2.2247.va_423189a_7dff
 pipeline-stage-step:322.vecffa_99f371c
 pipeline-stage-tags-metadata:2.2247.va_423189a_7dff
 plain-credentials:195.vb_906e9073dee
+plugin-util-api:6.1.0
+resource-disposer:0.25
 scm-api:704.v3ce5c542825a_
 script-security:1373.vb_b_4a_a_c26fa_00
 snakeyaml-api:2.3-125.v4d77857a_b_402
@@ -50,3 +61,4 @@ workflow-multibranch:803.v08103b_87c280
 workflow-scm-step:437.v05a_f66b_e5ef8
 workflow-step-api:700.v6e45cb_a_5a_a_21
 workflow-support:963.va_600813d04a_a_
+ws-cleanup:0.48
