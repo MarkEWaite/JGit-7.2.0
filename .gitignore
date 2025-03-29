@@ -9,6 +9,7 @@
 /jobs/**/builds/
 /jobs/**/workspace/
 /jobs/**/nextBuildNumber
+!/jobs/**/config.xml
 /nodeMonitors.xml
 /org.jenkinsci.plugins.workflow.flow.FlowExecutionList.xml
 /plugins/
