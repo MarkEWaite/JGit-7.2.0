@@ -1,6 +1,11 @@
 #!/bin/bash
 
 # Tset JGit 7.2.0 for file leak
+#
+# Compare JGit 7.0.0 and JGit 7.2.0 with file leak detector watching the operations
+#
+# JGit 7.2.0 seems to have a repeatable leak in file.Pack.doOpen() when called through
+# RevWalk.parseCommit() and RevWalk.parseAny()
 
 JENKINS_WAR_VERSION=2.492.2
 JENKINS_WAR=jenkins-${JENKINS_WAR_VERSION}.war
