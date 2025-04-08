@@ -15,6 +15,14 @@
 #
 # File handle leaks are not reported for JGit 7.0.0 as included in git client 6.1.x.
 # File handle leaks are reported for JGit 7.2.0 as included in git client 6.2.0 incremental.
+#
+# The following script will run all the jobs from "Manage Jenkins" -> "Script Console"
+#
+# Jenkins.instance.getAllItems(org.jenkinsci.plugins.workflow.job.WorkflowJob.class).findAll().each {
+#     it.scheduleBuild(0, new hudson.model.Cause.UserIdCause())
+#     println('Scheduled ' + it.fullName)
+# }
+# return ""
 
 JENKINS_WAR_VERSION=2.492.3
 JENKINS_WAR=jenkins-${JENKINS_WAR_VERSION}.war
