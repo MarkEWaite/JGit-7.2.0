@@ -32,8 +32,8 @@ json-api:20250107-125.v28b_a_ffa_eb_f01
 junit:1319.v000471ca_e5e2
 mailer:489.vd4b_25144138f
 matrix-project:847.v88a_f90ff9f20
-mina-sshd-api-core:incrementals;io.jenkins.plugins.mina-sshd-api;2.15.0-160.ve752fb_2d75a_d
-mina-sshd-api-common:incrementals;io.jenkins.plugins.mina-sshd-api;2.15.0-160.ve752fb_2d75a_d
+mina-sshd-api-core:2.15.0-161.vb_200831a_c15b_
+mina-sshd-api-common:2.15.0-161.vb_200831a_c15b_
 pipeline-build-step:557.v95d96f77b_2b_8
 pipeline-groovy-lib:752.vdddedf804e72
 pipeline-input-step:517.vf8e782ee645c
