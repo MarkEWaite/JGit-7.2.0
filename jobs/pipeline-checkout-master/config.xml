@@ -19,9 +19,10 @@
         stage(&apos;Checkout&apos;) {
             steps {
                 cleanWs()
+                sh &apos;git config --global core.repositoryCacheExpireAfter 100 &amp;&amp; git config --global core.repositoryCacheCleanupDelay 1397&apos;
                 checkout scmGit(branches: [[name: &apos;*/master&apos;]], 
                                 userRemoteConfigs: [[url: &apos;https://github.com/jenkinsci/xshell-plugin.git&apos;]])
-                sh &apos;git branch &amp;&amp; git log -n 1&apos;
+                sh &apos;git config --global --list &amp;&amp; git branch &amp;&amp; git log -n 1&apos;
             }
         }
     }
