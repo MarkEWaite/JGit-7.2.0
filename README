@@ -34,4 +34,11 @@ if [ ! -f ../$JENKINS_WAR ]; then
   mv jenkins*.war ../$JENKINS_WAR
 fi
 
+# Set JGit cleanup parameters globally
+#
+# https://eclipse.gerrithub.io/c/eclipse-jgit/jgit/+/74904
+#
+git config --global core.repositoryCacheExpireAfter 100
+git config --global core.repositoryCacheCleanupDelay 1397
+
 JENKINS_HOME=. java -XX:+EnableDynamicAgentLoading -jar ../$JENKINS_WAR
