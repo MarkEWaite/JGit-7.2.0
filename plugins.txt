@@ -16,7 +16,7 @@ echarts-api:5.6.0-2
 file-leak-detector:1.14
 font-awesome-api:6.7.2-1
 git:5.7.0
-git-client:incrementals;org.jenkins-ci.plugins;6.2.0-rc3738.47a_1b_4ddb_980
+git-client:incrementals;org.jenkins-ci.plugins;6.2.0-rc3755.2717849a_17b_9
 # git-client:6.1.2
 gson-api:2.12.1-113.v347686d6729f
 instance-identity:203.v15e81a_1b_7a_38
