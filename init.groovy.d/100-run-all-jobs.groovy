@@ -1,6 +1,11 @@
 // Run all the jobs once
-Jenkins.instance.getAllItems(org.jenkinsci.plugins.workflow.job.WorkflowJob.class).findAll().each {
-    it.scheduleBuild(0, new hudson.model.Cause.UserIdCause())
+
+import hudson.model.Cause.UserIdCause;
+import jenkins.model.Jenkins;
+import org.jenkinsci.plugins.workflow.job.WorkflowJob;
+
+Jenkins.instance.getAllItems(WorkflowJob.class).findAll().each {
+    it.scheduleBuild(0, new UserIdCause())
     println('Scheduled ' + it.fullName)
 }
 return ""
