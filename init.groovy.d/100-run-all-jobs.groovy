@@ -5,10 +5,9 @@ import jenkins.model.Jenkins;
 import org.jenkinsci.plugins.workflow.job.WorkflowJob;
 
 Jenkins.instance.getAllItems(WorkflowJob.class).findAll().each {
-    if (it.fullName.contains("pipeline-all-start")) {
-        continue
+    if (!it.fullName.contains("pipeline-all-start")) {
+        it.scheduleBuild(0, new UserIdCause())
+        println('Scheduled ' + it.fullName)
     }
-    it.scheduleBuild(0, new UserIdCause())
-    println('Scheduled ' + it.fullName)
 }
 return ""
