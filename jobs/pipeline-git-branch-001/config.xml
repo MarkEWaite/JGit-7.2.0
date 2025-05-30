@@ -1,8 +1,8 @@
 <?xml version='1.1' encoding='UTF-8'?>
-<flow-definition plugin="workflow-job@1508.v9cb_c3a_a_89dfd">
+<flow-definition plugin="workflow-job@1520.v56d65e3b_4566">
   <actions>
-    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@2.2254.v2a_978de46f35"/>
-    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@2.2254.v2a_978de46f35">
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@2.2255.v56a_15e805f12"/>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@2.2255.v56a_15e805f12">
       <jobProperties/>
       <triggers/>
       <parameters/>
@@ -12,7 +12,7 @@
   <description></description>
   <keepDependencies>false</keepDependencies>
   <properties/>
-  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@4080.va_15b_44a_91525">
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@4106.v7a_8a_8176d450">
     <script>pipeline {
     agent any
 
@@ -20,7 +20,6 @@
         stage(&apos;Checkout&apos;) {
             steps {
                 cleanWs()
-                sh &apos;git config --global core.repositoryCacheExpireAfter 100 &amp;&amp; git config --global core.repositoryCacheCleanupDelay 1397&apos;
                 git branch: &apos;branch-001&apos;, url: &apos;https://github.com/jenkinsci/xshell-plugin.git&apos;
                 sh &apos;git branch &amp;&amp; git log -n 1&apos;
             }
