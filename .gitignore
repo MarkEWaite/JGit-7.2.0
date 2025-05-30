@@ -7,10 +7,11 @@
 /jenkins.mvn.GlobalMavenConfig.xml
 /jenkins.telemetry.Correlator.xml
 /jobs/**/builds/
-/jobs/**/workspace*/
-/jobs/**/nextBuildNumber
 !/jobs/**/config.xml
+/jobs/**/nextBuildNumber
+/jobs/**/workspace*/
 /nodeMonitors.xml
+/org.jenkinsci.plugins.resourcedisposer.AsyncResourceDisposer.xml
 /org.jenkinsci.plugins.workflow.flow.FlowExecutionList.xml
 /plugins/
 /queue.xml*
