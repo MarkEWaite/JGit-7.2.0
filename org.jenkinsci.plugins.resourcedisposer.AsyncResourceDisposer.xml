@@ -5,7 +5,20 @@
     <unserializable-parents/>
     <java.util.Collections_-SetFromMap>
       <default>
-        <m class="concurrent-hash-map"/>
+        <m class="concurrent-hash-map">
+          <entry>
+            <org.jenkinsci.plugins.resourcedisposer.AsyncResourceDisposer_-WorkItem>
+              <disposer reference="../../../../../../.."/>
+              <disposable class="hudson.plugins.ws_cleanup.Wipeout$DisposableImpl" plugin="ws-cleanup@0.48">
+                <node></node>
+                <path>/home/mwaite/bugs/JGit-7.2.0/jobs/pipeline-git-master/workspace_ws-cleanup_1748565316171</path>
+              </disposable>
+              <registered>2025-05-30 00:35:16.172 UTC</registered>
+              <disposableInfo>hudson.plugins.ws_cleanup.Wipeout$DisposableImpl:Workspace master:/home/mwaite/bugs/JGit-7.2.0/jobs/pipeline-git-master/workspace_ws-cleanup_1748565316171</disposableInfo>
+            </org.jenkinsci.plugins.resourcedisposer.AsyncResourceDisposer_-WorkItem>
+            <boolean>true</boolean>
+          </entry>
+        </m>
       </default>
     </java.util.Collections_-SetFromMap>
   </backlog>
