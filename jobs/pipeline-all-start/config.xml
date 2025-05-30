@@ -21,15 +21,15 @@
             steps {
                 sleep 1
                 build wait: false, job: &apos;pipeline-checkout-branch-002&apos;
-                sleep 2
+                sleep 1
                 build wait: false, job: &apos;pipeline-checkout-branch-002-reference-repo&apos;
-                sleep 3
+                sleep 1
                 build wait: false, job: &apos;pipeline-checkout-branch-002-reference-repo-local-branch-honor-refspec-shallow-clone&apos;
-                sleep 5
+                sleep 1
                 build wait: false, job: &apos;pipeline-checkout-master&apos;
-                sleep 7
+                sleep 1
                 build wait: false, job: &apos;pipeline-git-branch-001&apos;
-                sleep 9
+                sleep 1
                 build wait: false, job: &apos;pipeline-git-master&apos;
             }
         }
