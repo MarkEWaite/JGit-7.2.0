@@ -37,6 +37,9 @@ fi
 
 java -jar ../$PLUGIN_MANAGER_JAR --jenkins-version $JENKINS_WAR_VERSION --latest false --plugin-download-directory plugins --plugin-file plugins.txt
 
+# Replace the git-client plugin with a repaired version if USE_THE_FIX env var is non-empty
+[ -z "$USE_THE_FIX" ] || cp git-client-issue-155.jpi plugins/git-client.jpi
+
 if [ ! -f ../$JENKINS_WAR ]; then
   wget https://get.jenkins.io/war-stable/${JENKINS_WAR_VERSION}/jenkins.war
   mv jenkins*.war ../$JENKINS_WAR
