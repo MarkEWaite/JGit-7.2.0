@@ -1,10 +1,10 @@
 #!/bin/bash
 
-# Tset JGit 7.2.1 for file leak
+# Tset JGit 7.3.0 for file leak
 #
-# Compare JGit 7.0.0 and JGit 7.2.1 with file leak detector watching the operations
+# Compare JGit 7.0.0 and JGit 7.3.0 with file leak detector watching the operations
 #
-# JGit 7.2.1 seems to have a repeatable leak in file.Pack.doOpen() when called through
+# JGit 7.3.0 seems to have a repeatable leak in file.Pack.doOpen() when called through
 # RevWalk.parseCommit() and RevWalk.parseAny()
 #
 # See the issue by running this README.  Complete the setup wizard
@@ -14,7 +14,7 @@
 # page at /manage/file-handles/
 #
 # File handle leaks are not reported for JGit 7.0.0 as included in git client 6.1.x.
-# File handle leaks are reported for JGit 7.2.1 as included in git client 6.2.0 incremental.
+# File handle leaks are reported for JGit 7.3.0 as included in git client 6.2.0 incremental.
 #
 # The following script will run all the jobs from "Manage Jenkins" -> "Script Console"
 #
@@ -24,7 +24,7 @@
 # }
 # return ""
 
-JENKINS_WAR_VERSION=2.504.2
+JENKINS_WAR_VERSION=2.504.3
 JENKINS_WAR=jenkins-${JENKINS_WAR_VERSION}.war
 PLUGIN_MANAGER_VERSION=2.13.2
 PLUGIN_MANAGER_JAR=jenkins-plugin-manager-${PLUGIN_MANAGER_VERSION}.jar
