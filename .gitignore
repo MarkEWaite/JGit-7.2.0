@@ -3,16 +3,12 @@
 /identity.key.enc
 /jenkins.install.InstallUtil.lastExecVersion
 /jenkins.install.UpgradeWizard.state
-/jenkins.model.JenkinsLocationConfiguration.xml
-/jenkins.mvn.GlobalMavenConfig.xml
-/jenkins.telemetry.Correlator.xml
+/*.xml
 /jobs/**/builds/
 !/jobs/**/config.xml
 /jobs/**/nextBuildNumber
 /jobs/**/workspace*/
 /nodeMonitors.xml
-/org.jenkinsci.plugins.resourcedisposer.AsyncResourceDisposer.xml
-/org.jenkinsci.plugins.workflow.flow.FlowExecutionList.xml
 /plugins/
 /queue.xml*
 /secret.key
