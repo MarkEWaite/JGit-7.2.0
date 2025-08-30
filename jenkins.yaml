@@ -1,0 +1,23 @@
+jenkins:
+  authorizationStrategy:
+    loggedInUsersCanDoAnything:
+      allowAnonymousRead: true
+  numExecutors: 2
+  securityRealm:
+    local:
+      allowsSignup: false
+      enableCaptcha: false
+      users:
+      - id: "${USER}"
+        name: "Mark Waite"
+        # Password is set in init.groovy.d
+tool:
+  git:
+    installations:
+    - home: "git"
+      name: "Default"
+    - name: "jgit"
+unclassified:
+  location:
+    adminAddress: "${USER}@example.com"
+    url: "http://${HOSTNAME}:8080/"

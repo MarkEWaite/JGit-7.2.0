@@ -56,4 +56,12 @@ fi
 # git config --global core.repositoryCacheExpireAfter 100
 # git config --global core.repositoryCacheCleanupDelay 1397
 
-JENKINS_HOME=. java -XX:+EnableDynamicAgentLoading -jar ../$JENKINS_WAR
+# Let CasC configure the Jenkins URL
+if [[ $(hostname) =~ '[.]' ]]; then
+  HOSTNAME=$(hostname)
+else
+  HOSTNAME=$(hostname).$(dnsdomainname)
+fi
+export HOSTNAME
+
+JENKINS_HOME=. java -XX:+EnableDynamicAgentLoading -Djenkins.install.runSetupWizard=false -jar ../$JENKINS_WAR
