@@ -24,7 +24,7 @@
 # }
 # return ""
 
-JENKINS_WAR_VERSION=2.504.3
+JENKINS_WAR_VERSION=2.516.2
 JENKINS_WAR=jenkins-${JENKINS_WAR_VERSION}.war
 PLUGIN_MANAGER_VERSION=2.13.2
 PLUGIN_MANAGER_JAR=jenkins-plugin-manager-${PLUGIN_MANAGER_VERSION}.jar
@@ -53,7 +53,7 @@ fi
 #
 # https://github.com/eclipse-jgit/jgit/issues/155
 #
-git config --global core.repositoryCacheExpireAfter 100
-git config --global core.repositoryCacheCleanupDelay 1397
+# git config --global core.repositoryCacheExpireAfter 100
+# git config --global core.repositoryCacheCleanupDelay 1397
 
 JENKINS_HOME=. java -XX:+EnableDynamicAgentLoading -jar ../$JENKINS_WAR
